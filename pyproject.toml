@@ -1,0 +1,23 @@
+[project]
+name = "terraform-modules"
+version = "0.0.1"
+description = "Terraform modules to be used in the Investments Assistant."
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+    { name = "lupirex", email = "lu15.p1r35.1996@gmail.com" }
+]
+keywords = [ "Terraform", "modules" ]
+dependencies = [
+    "pre-commit (>=4.3.0,<5.0.0)"
+]
+
+[project.urls]
+repository = "https://github.com/Investments-Assistant/terraform-modules"
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
