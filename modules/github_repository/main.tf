@@ -44,12 +44,6 @@ resource "github_repository_file" "contributing" {
   content = file("${path.module}/files_templates/CONTRIBUTING_template")
 }
 
-resource "github_repository_file" "gitignore" {
-  repository = github_repository.repository.name
-  file       = ".gitignore"
-  content    = file("${path.module}/files_templates/gitignore_template")
-}
-
 resource "github_repository_file" "license" {
   repository = github_repository.repository.name
   file       = "LICENSE"

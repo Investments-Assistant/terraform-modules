@@ -29,7 +29,7 @@ provider "github" {
 }
 
 module "github_repository" {
-  source             = "git::https://github.com/Investments-Assistant/tf-modules//modules/github_repository?ref=main"
+  source             = "git::https://github.com/Investments-Assistant/terraform-modules//modules/github_repository?ref=main"
   repository_name    = "repository-name"
   gtihub_token       = var.GITHUB_TOKEN
   description        = "Description of the repository"
@@ -44,7 +44,7 @@ module "github_repository" {
 | Name                | Type          | Description                                                                                 | Required |
 |---------------------|---------------|---------------------------------------------------------------------------------------------|----------|
 | repository_name     | string        | Name of the repository to be created                                                        | yes      |
-| github_token        | string        | GitHub Personal Access Token value                                                          | yes      |
+| github_token        | string        | GitHub Personal Access Token                                                                | yes      |
 | description         | string        | Description of the repository                                                               | no       |
 | gitignore_template  | string        | Gitignore template to use for the repository (e.g. 'Haskell')                               | no       |
 | topics              | list(string)  | List of topics of the repository (e.g. ['Terraform', 'Python', 'GenAI', 'Traditional ML'])  | no       |
